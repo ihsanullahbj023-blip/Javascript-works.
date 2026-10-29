@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Table</title>
+    </head>
+    <body>
+        <script>
+            //array data
+            var arr=[
+            ["Roll.No" ,"Name"  ,  "F.Name", 18  ,  "Address"],
+            [101  ,    "Asad "  ,  "khan"  , 15  ,  "bajaur"] ,
+            [102  ,    "zeeshan",  "khan"  , 16 ,   "taral"]  ,
+            [103  ,    "Dansh " ,  "jan"   , 17 ,   "khar"]   ,
+            [104  ,    "ihsan " ,  "haqani" , 20 ,  "swat"]
+        ];
+
+       // this is table tage
+           document.write("<table border='1px' cellpadding='5' cellspacing='0'>");
+        // this is row loop 
+            for(x= 0; x<=5;x++){
+                document.write("<tr>");
+        //this is coulumm loop 
+            for(y=0; y<=4; y++){
+                document.write("<td>" + arr[x][y] + "</td>");
+                }
+                document.write("</tr>");
+            }
+            document.write("</table>");
+        </script>
+    </body>
+</html>
